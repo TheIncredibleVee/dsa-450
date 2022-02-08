@@ -1,5 +1,5 @@
 #O(n) and O(n) time and space complexity
-def rearrange(self,arr, n):
+def rearrange(arr, n):
     i=0
     pos=[]
     neg=[]
