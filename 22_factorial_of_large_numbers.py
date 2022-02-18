@@ -1,4 +1,4 @@
-#python hack, no limit to int in python
+#python hack, no limit to int in python O(n) space and O(n) time
 
 def factorial( N):
     dp=[1]

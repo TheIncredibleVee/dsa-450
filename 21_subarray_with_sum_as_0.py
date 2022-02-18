@@ -1,3 +1,4 @@
+#O(n) time and space O(n)
 def subArrayExists(arr,n):
     ##Your code here
     #Return true or false

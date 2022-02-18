@@ -1,3 +1,4 @@
+#O(n) time and O(n) space
 def getPairsCount(arr, n, k):
     dic={}
     res=0

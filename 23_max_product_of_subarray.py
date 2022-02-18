@@ -1,3 +1,4 @@
+#O(n) time and O(1) space 
 def maxProduct(arr, n):
     mini=maxi=arr[0]
     res=arr[0];

@@ -1,3 +1,4 @@
+#O(n) time and O(1) space
 def maxProfit( prices):
     res=0
     mi=float('inf')

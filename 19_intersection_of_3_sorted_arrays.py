@@ -1,3 +1,4 @@
+#O(n+m+o) and O(n+m+o)[only for res]
 def commonElements(A, B, C, n1, n2, n3):
     i=0;
     j=0;

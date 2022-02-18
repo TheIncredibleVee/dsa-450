@@ -1,3 +1,4 @@
+#O(n) time and O(n) space
 def findLongestConseqSubseq(arr, N):
     mini=min(arr)
     maxi=max(arr)
