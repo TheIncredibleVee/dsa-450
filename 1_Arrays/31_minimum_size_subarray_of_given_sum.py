@@ -1,6 +1,5 @@
 #o(n ) time and O(1) space 
 def minSubArrayLen(target, nums):
-    res=0
     n=len(nums)
     curr_sum=0
     cnt=0
@@ -25,30 +24,29 @@ def minSubArrayLen(target, nums):
     # start=0
     # end=cnt-1
     # print(start, end, res)
-    #     for i in range(end+1,n):
-    #         curr_sum+=nums[i]
-    #         print(start, i, res, curr_sum)
-    #         while curr_sum>=target:
-            
-    #             curr_sum-=nums[start]
-    #             res=min(res,i-start+1)
-    #             start+=1
-    #             print(start, i, res, curr_sum)
+    # for i in range(end+1,n):
+    #     curr_sum+=nums[i]
+    #     print(start, i, res, curr_sum)
     #     while curr_sum>=target:
     #         curr_sum-=nums[start]
-    #         res=min(res,n-start)
+    #         res=min(res,i-start+1)
     #         start+=1
+    #         print(start, i, res, curr_sum)
+    # while curr_sum>=target:
+    #     curr_sum-=nums[start]
+    #     res=min(res,n-start)
+    #     start+=1
     #
 
 
 
 
 
-    #Making presum array and then searching s+presum[i] for all i and return the min of the res and dif. in indexes of i and found lowerbound will be ans
+    #Making presum array and then searching target+presum[i] for all i and return the min of the res and dif. in indexes of i and found lowerbound will be ans
     #O(nlogn) time as nos are +ve and binary search is used and O(n) space
 
     #C++ code:
-    #  int minSubArrayLen(int s, vector<int>& nums)
+    #  int minSubArrayLen(int target, vector<int>& nums)
     # {
     #     int n = nums.size();
     #     if (n == 0)
@@ -58,7 +56,7 @@ def minSubArrayLen(target, nums):
     #     for (int i = 1; i <= n; i++)
     #         sums[i] = sums[i - 1] + nums[i - 1];
     #     for (int i = 1; i <= n; i++) {
-    #         int to_find = s + sums[i - 1];
+    #         int to_find = target + sums[i - 1];
     #         auto bound = lower_bound(sums.begin(), sums.end(), to_find);
     #         if (bound != sums.end()) {
     #             ans = min(ans, static_cast<int>(bound - (sums.begin() + i - 1)));
